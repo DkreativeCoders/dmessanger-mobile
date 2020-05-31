@@ -1,3 +1,4 @@
+import 'package:dmessanger_mobile/screens/welcome_screen_one.dart';
 import 'package:flutter/material.dart';
 
 const String welcomeScreen1Route = '/';
@@ -15,19 +16,7 @@ class Router {
     switch (settings.name) {
       case welcomeScreen1Route:
         return MaterialPageRoute(
-          builder: (_) => Scaffold(
-            backgroundColor: Colors.white,
-            body: Center(
-              child: Text(
-                'DMessanger',
-                style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-          ),
+          builder: (_) => WelcomeScreenOne(),
         );
 
       case welcomeScreen2Route:
