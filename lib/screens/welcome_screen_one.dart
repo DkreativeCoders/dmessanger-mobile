@@ -10,7 +10,7 @@ class WelcomeScreenOne extends StatelessWidget {
           'DMessanger',
           style: TextStyle(
             color: Colors.blue,
-            fontSize: 24,
+            fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
         ),
