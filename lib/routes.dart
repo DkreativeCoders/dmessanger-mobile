@@ -14,7 +14,22 @@ class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case welcomeScreen1Route:
-        return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
+        return MaterialPageRoute(
+          builder: (_) => Scaffold(
+            backgroundColor: Colors.white,
+            body: Center(
+              child: Text(
+                'DMessanger',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+        );
+
       case welcomeScreen2Route:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
       case welcomeScreen3Route:
