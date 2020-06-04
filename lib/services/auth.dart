@@ -1,15 +1,16 @@
 import 'dart:convert';
+import 'package:dmessanger_mobile/models/user.dart';
 import 'package:dmessanger_mobile/utils/service_handler.dart';
 
 class AuthService{
   // Modify to use the fromJson Value
-  static Future<Map<String, dynamic>> register(
+   Future<User> register(
       Map<String, dynamic> registrationDetails) async {
     try {
       String url = "";
       var response = await APIServiceHandler.get(url);
       if (response.statusCode == 200) {
-        return json.decode(response.body);
+        return User.fromJson(json.decode(response.body));
       } else {
         throw Exception("Registration could not be completed. Try again");
       }
@@ -18,17 +19,16 @@ class AuthService{
     }
   }
 
-  static Future<Map<String, dynamic>> signin(Map<String, dynamic> signinDetails) async {
+   Future<User> signin(Map<String, dynamic> signinDetails) async {
     try {
       String url = "";
       var response = await APIServiceHandler.get(url);
       if (response.statusCode == 200) {
-        return json.decode(response.body);
+        return User.fromJson(json.decode(response.body));
       } else {
         throw Exception("Registration could not be completed. Try again");
       }
     } catch (e) {
-      print(e);
       throw Exception("An error occured");
     }
   }

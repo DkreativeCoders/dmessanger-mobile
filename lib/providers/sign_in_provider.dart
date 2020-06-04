@@ -1,13 +1,16 @@
+import 'package:dmessanger_mobile/locator.dart';
 import 'package:dmessanger_mobile/services/auth.dart';
 import 'package:dmessanger_mobile/utils/validations.dart';
 import 'package:flutter/widgets.dart';
 
 class SigninProvider extends ChangeNotifier {
-  bool _isLoading = false;
+  AuthService _authService = locator<AuthService>();
 
+  bool _isLoading = false;
   bool get isLoading => _isLoading;
 
   var _formKey = GlobalKey<FormState>();
+
   GlobalKey<FormState> get formKey => _formKey;
 
   String email;
@@ -27,19 +30,11 @@ class SigninProvider extends ChangeNotifier {
       notifyListeners();
 
       try {
-        await AuthService.signin({"": ""});
-      }
-      catch (e) {
-        print(e);
-      }
-      finally {
+        await _authService.signin({"": ""});
+      } catch (e) {} finally {
         _isLoading = false;
         notifyListeners();
       }
     }
-
-
   }
-
-
 }

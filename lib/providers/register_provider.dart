@@ -1,9 +1,12 @@
+import 'package:dmessanger_mobile/locator.dart';
 import 'package:dmessanger_mobile/routes.dart';
 import 'package:dmessanger_mobile/services/auth.dart';
 import 'package:dmessanger_mobile/utils/validations.dart';
 import 'package:flutter/widgets.dart';
 
 class RegisterProvider extends ChangeNotifier {
+  AuthService _authService = locator<AuthService>();
+
   var _formKey = GlobalKey<FormState>();
   GlobalKey<FormState> get formKey => _formKey;
 
@@ -63,7 +66,7 @@ class RegisterProvider extends ChangeNotifier {
       notifyListeners();
 
       try {
-        await AuthService.register({"": ""});
+        await _authService.register({"": ""});
         Navigator.pushNamed(context, welcomeScreen1Route);
       } catch (e) {
         print(e);
