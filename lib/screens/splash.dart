@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void loadSplash() async {
     Duration duration = new Duration(seconds: 2);
     await Future.delayed(duration, () {
-      Navigator.pushReplacementNamed(context, welcomeScreen1Route);
+      Navigator.pushReplacementNamed(context, signInRoute);
     });
   }
 

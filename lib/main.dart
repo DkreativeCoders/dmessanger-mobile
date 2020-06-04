@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           primaryColor: primaryColour,
           fontFamily: 'Roboto'
         ),
-        initialRoute: registerRoute,
+        initialRoute: splashScreen,
         onGenerateRoute: Router.generateRoute,
       ),
     );

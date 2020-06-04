@@ -6,22 +6,19 @@ import 'package:dmessanger_mobile/screens/welcome_screen_one.dart';
 import 'package:flutter/material.dart';
 
 const String splashScreen = "/";
-const String welcomeScreen1Route = '/welcome/1';
-const String splashScreenRoute = "/splashscreen";
 const String registerRoute = '/register';
 const String signInRoute = '/signin';
 const String forgotPasswordRoute = '/forgotpassword';
-
+const String welcomeScreen1Route = '/welcome/1';
 const String welcomeScreen2Route = '/welcome/2';
 const String welcomeScreen3Route = '/welcome/3';
-
 
 const String userHomePageRoute = '/homepage';
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
-      case splashScreenRoute:
+      case splashScreen:
         return MaterialPageRoute(builder: (_) => SplashScreen());
 
       case registerRoute:
@@ -42,8 +39,6 @@ class Router {
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
       case welcomeScreen3Route:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
-
-
 
       case userHomePageRoute:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
