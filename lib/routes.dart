@@ -1,7 +1,9 @@
+import 'package:dmessanger_mobile/screens/splash_screen.dart';
 import 'package:dmessanger_mobile/screens/welcome_screen_one.dart';
 import 'package:flutter/material.dart';
 
-const String welcomeScreen1Route = '/';
+const String splashScreen = "/";
+const String welcomeScreen1Route = '/welcome/1';
 const String welcomeScreen2Route = '/welcome/2';
 const String welcomeScreen3Route = '/welcome/3';
 
@@ -33,6 +35,9 @@ class Router {
 
       case userHomePageRoute:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
+
+      case splashScreen:
+        return MaterialPageRoute(builder: (_) => SplashScreen());
 
       default:
         return MaterialPageRoute(
