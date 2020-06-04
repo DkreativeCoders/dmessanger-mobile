@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'package:dmessanger_mobile/utils/service_handler.dart';
 
-class AuthService {
+class AuthService{
+  // Modify to use the fromJson Value
   static Future<Map<String, dynamic>> register(
       Map<String, dynamic> registrationDetails) async {
     try {

@@ -15,6 +15,7 @@ class OutlinedTextField extends StatelessWidget {
       validator: validator != null ? (value) => validator(value) : null,
       onChanged: onChanged != null ? (value) => onChanged(value) : null,
       style: TextStyle(fontSize: 14.0),
+      showCursor: false,
       decoration: InputDecoration(
         alignLabelWithHint: true,
         labelText: labelText,

@@ -5,15 +5,15 @@ import 'package:dmessanger_mobile/screens/splash.dart';
 import 'package:dmessanger_mobile/screens/welcome_screen_one.dart';
 import 'package:flutter/material.dart';
 
+const String splashScreen = "/";
+const String welcomeScreen1Route = '/welcome/1';
 const String splashScreenRoute = "/splashscreen";
 const String registerRoute = '/register';
 const String signInRoute = '/signin';
 const String forgotPasswordRoute = '/forgotpassword';
 
-const String welcomeScreen1Route = '/';
 const String welcomeScreen2Route = '/welcome/2';
 const String welcomeScreen3Route = '/welcome/3';
-
 
 
 const String userHomePageRoute = '/homepage';
