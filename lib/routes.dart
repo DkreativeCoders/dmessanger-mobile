@@ -2,8 +2,8 @@ import 'package:dmessanger_mobile/screens/splash_screen.dart';
 import 'package:dmessanger_mobile/screens/welcome_screen_one.dart';
 import 'package:flutter/material.dart';
 
-const String splashScreen = "/splashscreen";
-const String welcomeScreen1Route = '/';
+const String splashScreen = "/";
+const String welcomeScreen1Route = '/welcome/1';
 const String welcomeScreen2Route = '/welcome/2';
 const String welcomeScreen3Route = '/welcome/3';
 
