@@ -16,17 +16,23 @@ dependencies:
   http: ^0.12.1
   dio: ^3.0.9
   flutter_secure_storage: ^3.3.3
+  provider: ^4.1.2
+  get_it: ^4.0.2
+  flutter_spinkit: "^4.1.2"
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-
 flutter:
   uses-material-design: true
 
-  # To add assets to your application, add an assets section, like this:
   assets:
     - assets/
     - assets/images/
 
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
