@@ -1,3 +1,4 @@
+import 'package:dmessanger_mobile/screens/change_password.dart';
 import 'package:dmessanger_mobile/screens/forgot_password.dart';
 import 'package:dmessanger_mobile/screens/register.dart';
 import 'package:dmessanger_mobile/screens/sign_in.dart';
@@ -12,6 +13,7 @@ const String forgotPasswordRoute = '/forgotpassword';
 const String welcomeScreen1Route = '/welcome/1';
 const String welcomeScreen2Route = '/welcome/2';
 const String welcomeScreen3Route = '/welcome/3';
+const String changePasswordRoute = '/changePassword';
 
 const String userHomePageRoute = '/homepage';
 
@@ -42,6 +44,9 @@ class Router {
 
       case userHomePageRoute:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Container()));
+
+      case changePasswordRoute:
+        return MaterialPageRoute(builder: (_) => ChangePassword());
 
       default:
         return MaterialPageRoute(
