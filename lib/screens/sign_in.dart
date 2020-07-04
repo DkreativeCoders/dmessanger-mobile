@@ -50,7 +50,7 @@ class SignIn extends StatelessWidget {
                     InkWell(
                       child: Text("Forgot Password?", style: kSmallTextStyle,),
                       onTap: () {
-                        Navigator.pushNamed(context, userProfileRoute);
+                        Navigator.pushNamed(context, forgotPasswordRoute);
                       },
                     ),
                   ],
