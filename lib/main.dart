@@ -1,4 +1,5 @@
 import 'package:dmessanger_mobile/locator.dart';
+import 'package:dmessanger_mobile/providers/change_password_provider.dart';
 import 'package:dmessanger_mobile/providers/register_provider.dart';
 import 'package:dmessanger_mobile/providers/sign_in_provider.dart';
 import 'package:dmessanger_mobile/routes.dart';
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => SigninProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => ChangePasswordProvider(),
         ),
       ],
       child: MaterialApp(
